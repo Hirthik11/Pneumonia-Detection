@@ -1,0 +1,82 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Pneumonia Detector</title>
+    <link
+      href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link
+      href="{{ url_for('static', filename='style.css') }}"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        Pneumonia Detection using Deep Learning Technique</a
+      >
+      <button
+        type="button"
+        class="btn btn-primary"
+        onclick="goHome()"
+        style="position: absolute; top: 45px; right: 10px"
+      >
+        Home
+      </button>
+    </div>
+
+    <div class="container" style="margin-bottom: 200px">
+      <div id="content" style="margin-top: 2em">
+        {% block content %}{% endblock %}
+      </div>
+    </div>
+    <script>
+      function goHome() {
+        // Clear any data or state you need to reset
+        localStorage.removeItem("profileImageData");
+        // Redirect to the home page or perform any other desired action
+        window.location.href = "/";
+      }
+    </script>
+  </body>
+
+  <footer>
+    <div class="footer">
+      <p>
+        This is a deep learning web app designed to predict if a patient has
+        TB/pneumonia using CNN.
+      </p>
+      <p>
+        It analyzes chest x-rays and provides results. NEGATIVE indicates
+        normal, and POSITIVE indicates pneumonia.
+      </p>
+      <p>
+        The dataset used for training includes x-ray images from Kaggle. It was
+        utilized to train CNN for accurate predictions.
+      </p>
+
+      <hr />
+      <!-- Separator line -->
+      <h4>Pneumonia Severity Information</h4>
+      <p>
+        Pneumonia severity varies depending on factors such as age, overall
+        health, and underlying conditions.
+      </p>
+      <p>
+        In severe cases, pneumonia can lead to respiratory failure and sepsis.
+        Early detection and treatment are crucial.
+      </p>
+      <p>
+        Consult a healthcare professional for evaluation and guidance if you
+        have concerns about pneumonia or chest x-ray results.
+      </p>
+    </div>
+  </footer>
+</html>

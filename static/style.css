@@ -1,0 +1,98 @@
+/* Global Styles */
+body {
+  font-family: Arial, sans-serif; /* Default font family */
+  color: #333; /* Text color */
+  background-image: url("./images/bg.png"); /* Background image */
+  background-size: contain; /* Cover the entire background */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Do not repeat the background image */
+  margin-bottom: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+}
+
+.bg-img {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.71), rgba(0, 0, 0, 0.7)),
+    url("static/css/front.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.container {
+  margin-top: 20px; /* Spacing from the top */
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.9
+  ); /* Container background color with transparency */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow */
+  padding: 20px; /* Padding inside container */
+}
+
+.navbar {
+  background-color: #007bff; /* Navbar background color */
+  color: #fff; /* Navbar text color */
+}
+
+/* Upload Section Styles */
+.upload {
+  text-align: center; /* Center align content */
+}
+
+.upload img {
+  max-width: 100%; /* Ensure the image does not exceed its container */
+  height: auto; /* Maintain aspect ratio */
+}
+
+/* Predictions Section Styles */
+.Predictions {
+  text-align: center; /* Center align content */
+  margin-top: 20px; /* Spacing from the top */
+}
+
+.Predictions button {
+  margin: 5px; /* Add spacing between buttons */
+}
+
+.footer {
+  background-color: #343a40; /* Footer background color */
+  color: #fff; /* Footer text color */
+  padding: 30px 0; /* Padding top and bottom */
+  text-align: center; /* Center align text */
+}
+
+.footer p {
+  margin-bottom: 15px; /* Spacing between paragraphs */
+}
+
+.footer-severity {
+  background-color: #212529; /* Severity section background color */
+  color: #fff; /* Severity section text color */
+  padding: 30px; /* Padding */
+  border-top: 1px solid #fff; /* Top border */
+}
+
+.footer-severity h4 {
+  margin-bottom: 20px; /* Spacing below heading */
+}
+
+.footer-severity p {
+  margin-bottom: 15px; /* Spacing between paragraphs */
+}
+
+.footer a {
+  color: #fff; /* Footer link color */
+  text-decoration: none; /* Remove underline */
+}
+
+.footer a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+.footer b {
+  display: block; /* Display GitHub links as block elements */
+  margin-top: 10px; /* Spacing between GitHub links */
+}
